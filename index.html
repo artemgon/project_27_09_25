@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home System</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Home System</h1>
+        
+        <div class="controls">
+            <button id="arriveHomeBtn">Arrive Home</button>
+            <button id="leaveHomeBtn">Leave Home</button>
+            <button id="simulateDayBtn">Simulate Day</button>
+            <button id="sendMessageBtn">Send Message</button>
+        </div>
+
+        <div class="status-section">
+            <h2>Home Status</h2>
+            <div id="homeStatus"></div>
+        </div>
+
+        <div class="devices-section">
+            <h2>Devices</h2>
+            <div id="devicesStatus"></div>
+        </div>
+
+        <div class="chat-section">
+            <h2>Home Chat</h2>
+            <div class="chat-controls">
+                <input type="text" id="messageInput" placeholder="Type message...">
+                <select id="userSelect">
+                    <option value="all">All Users</option>
+                </select>
+                <button id="sendChatBtn">Send</button>
+            </div>
+            <div class="chat-log" id="chatLog"></div>
+        </div>
+
+        <div class="log-section">
+            <h2>System Log</h2>
+            <div class="log" id="systemLog"></div>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
